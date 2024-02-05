@@ -64,6 +64,7 @@ const server = http.createServer((req, res) => {
 
 });
 
-server.listen(5500);
-console.log('Server is Running')
+server.listen(5500, () => {
+  console.log(`Server is Running`);
+})
 
